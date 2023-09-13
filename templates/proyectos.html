@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if nombre and edad %}
+        <h1>Proyectos</h1>
+        <h2>Propietario: {{ nombre }}</h2>
+        <h2>Edad: {{ edad }}</h2>
+
+    {% if edad >= 18 %}
+        <h3>Eres mayor de edad</h3>
+        {% else %}
+        <h3>Eres menor de edad</h3>
+        {% endif %}
+{% else %}
+    <h1>Envia parametro nombre y edad</h1>
+{% endif %}
+</body>
+</html>
